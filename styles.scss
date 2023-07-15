@@ -1,0 +1,118 @@
+
+$c-white: #fff; 
+$c-lgray: #d6e2f0;
+$c-gblue: #7b879d;              // Variable Declaration SCSS for CSS 
+$c-dblue: #1f3251;
+$f-family: 'Outfit', sans-serif;
+
+
+/* General Declaration */
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: $f-family;
+}
+
+body {
+    background-color: $c-lgray;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+   
+    .bg-qr {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        width: 300px;
+        height: 500px;
+        background-color: $c-white;
+
+        border-radius: 30px 30px;
+      }
+
+      .qr-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+      }
+
+      .img-box {
+        padding: 25px; 
+            & #qr-image  {
+                width: 260px;
+                border-radius: 30px 30px;
+              }
+      }
+
+     
+      .tx-box {
+        text-align: center;
+            & #tx-head {
+                font-size: 15px + 5;
+            }
+
+            & #tx-description {
+                font-size: 15px;
+                margin-top: 20px;
+                color: $c-gblue;
+            }
+      }
+     
+}
+
+@media screen and (min-width: 768px) {
+    .bg-qr {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    
+        width: 300px;
+        height: 500px;
+        background-color: $c-white;
+        border-radius: 30px 30px;
+    }
+
+
+     .qr-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+      }
+
+      .img-box {
+        padding: 25px; 
+            & #qr-image  {
+                width: 260px;
+                border-radius: 30px 30px;
+              }
+      }
+
+     
+      .tx-box {
+        text-align: center;
+            & #tx-head {
+                font-size: 15px + 5;
+            }
+
+            & #tx-description {
+                font-size: 15px;
+                margin-top: 20px;
+                color: $c-gblue;
+            }
+      }
+
+}
